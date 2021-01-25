@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Request</title>
+</head>
+<body>
+    <div>TODO Content</div>
+
+    <script>
+        let myReuest = 'todo.json'
+
+        fetch(myReuest).then(function(response){
+            return response.json()
+        }).then(function(json){
+            console.log(json)
+        })
+
+    </script>
+</body>
+</html>
